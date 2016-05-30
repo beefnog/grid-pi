@@ -2,7 +2,7 @@
 Random exploration of calculating pi in various languages.
 
 ## Brief description of the method
-One of the simplest methods of calculating pi is to simply plot all of the points for a given grid. Comparing the proportion of points within a given radius versus outside of a given radius will give a value of pi. It's not efficient, and it doesn't produce terribly precise values without immense grid sizes. However, it is memory efficient and a reasonable approximation of real world tight loop integer workloads.
+One of the simplest methods for calculating pi is to plot all of the points for a given grid. Comparing the proportion of points within a given radius versus outside of a given radius will give a value of pi. It's not efficient, and it doesn't produce terribly precise values without immense grid sizes. However, it is memory efficient and a reasonable approximation of real world tight loop integer workloads.
 
 ## Sample runtimes
 As a reference value, math.pi is defined by python to be 3.141592653589793
