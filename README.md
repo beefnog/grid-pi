@@ -8,7 +8,8 @@ One of the simplest methods of calculating pi is to simply plot all of the point
 As a reference value, math.pi is defined by python to be 3.141592653589793
 
 
-### The C version, compiled with clang and no additional parameters or tuning:
+### The C version, compiled with clang and no additional parameters or tuning
+```
 time ./grid-pi
 Starting run, radius of 40000
 Run completed.
@@ -32,8 +33,9 @@ Pi seems to be... 3.1415813125
 real	0m0.666s
 user	0m0.657s
 sys	0m0.004s
-
+```
 ### The perl version, running on the same machine
+```
 time ./grid-pi.pl
 Starting run, radius of 4000
 Run completed.
@@ -45,9 +47,10 @@ Pi seems to be... 3.1415813125
 real	0m22.461s
 user	0m22.353s
 sys	0m0.056s
-
+```
 
 ### The python version, running on the same machine
+```
 time ./grid-pi.py
 Starting run, radius of 4000
 Run completed
@@ -59,4 +62,5 @@ Pi seems to be: 3.1415813125
 real	0m31.589s
 user	0m31.541s
 sys	0m0.028s
+```
 
