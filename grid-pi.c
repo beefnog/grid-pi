@@ -3,6 +3,7 @@
 #include <stdint.h>
 #include <math.h>
 #include <stdlib.h>
+#include <inttypes.h>
 
 int main (int argc, char **argv) {
 	
@@ -13,7 +14,7 @@ int main (int argc, char **argv) {
 	/* radius, such that 0,0 is origin and grid extents are +/- radius in x,y */
 	uint64_t radius = 4000;
 	
-	printf("Starting run, radius of %llu\n", radius);
+	printf("Starting run, radius of %" PRIu64 "\n", radius);
 	
 	for (int64_t x = (radius * -1); x != radius; x++) {
 		for (int64_t y = (radius * -1); y != radius; y++) {
@@ -28,9 +29,9 @@ int main (int argc, char **argv) {
 	long double proportion = 4 * ((long double) acc_in_circle / (acc_out_circle + acc_in_circle));
 	
 	printf("Run completed.\n");
-	printf("Total points: %llu\n", (acc_in_circle + acc_out_circle));
-	printf("Inside of circle: %llu\n", acc_in_circle);
-	printf("Outside of circle: %llu\n", acc_out_circle);
+	printf("Total points: %" PRIu64 "\n", (acc_in_circle + acc_out_circle));
+	printf("Inside of circle: %" PRIu64 "\n", acc_in_circle);
+	printf("Outside of circle: %" PRIu64 "\n", acc_out_circle);
 	printf("Pi seems to be... %1.10Lf\n", proportion);
 	
 	return 0;
